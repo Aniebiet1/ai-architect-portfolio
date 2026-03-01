@@ -4,34 +4,37 @@ import { ArrowRight, X } from "lucide-react";
 
 const projects = [
   {
-    name: "Intelligent Document QA Engine",
-    summary: "RAG-powered system for enterprise document understanding and question answering.",
-    tags: ["Python", "PyTorch", "FastAPI", "FAISS", "Docker"],
-    problem: "Enterprise teams waste hours searching through thousands of unstructured documents to find specific information.",
-    architecture: "User → API Gateway → Document Parser → Embedding Model → FAISS Vector DB → LLM Reasoning → Structured Response",
-    stack: ["Python", "PyTorch", "sentence-transformers", "FAISS", "FastAPI", "Redis", "Docker"],
-    results: { accuracy: "94.2%", latency: "<200ms", impact: "60% reduction in document search time" },
-    deployment: { cloud: "AWS (ECS + S3)", cicd: "GitHub Actions", monitoring: "Prometheus + Grafana" },
+    name: "Acadeva – Website",
+    summary: "Co-founded an EdTech platform with resourceful AI-powered tools for students.",
+    tags: ["React", "AI", "EdTech", "Co-Founder"],
+    problem: "Students lack access to intelligent, consolidated learning tools that adapt to their needs.",
+    architecture: "User → Web App → AI Services → Content Engine → Personalized Output",
+    stack: ["React", "AI/ML", "Web Platform"],
+    results: { users: "Growing", impact: "AI-powered student tools", role: "Co-Founder" },
+    deployment: { cloud: "Production", cicd: "Live", monitoring: "Active" },
+    link: "https://acadeva.xyz",
   },
   {
-    name: "Real-Time Fraud Detection Pipeline",
-    summary: "ML pipeline processing 10K+ transactions/sec with sub-50ms inference latency.",
-    tags: ["Python", "XGBoost", "Kafka", "Redis", "Kubernetes"],
-    problem: "Financial institution needed real-time fraud detection without impacting transaction processing speed.",
-    architecture: "Transaction Stream → Kafka → Feature Engine → XGBoost Ensemble → Risk Scorer → Alert System",
-    stack: ["Python", "XGBoost", "Kafka", "Redis", "Kubernetes", "PostgreSQL"],
-    results: { accuracy: "97.8%", latency: "<45ms", impact: "$2.3M annual fraud prevention" },
-    deployment: { cloud: "GCP (GKE)", cicd: "ArgoCD", monitoring: "Datadog" },
+    name: "Acadeva – Mobile App",
+    summary: "Mobile companion app with AI tools designed to help students learn more effectively.",
+    tags: ["Mobile", "AI", "EdTech", "Co-Founder"],
+    problem: "Students need on-the-go access to AI-powered study tools from their phones.",
+    architecture: "Mobile App → API Gateway → AI Services → Student Dashboard",
+    stack: ["Mobile App", "AI Tools", "REST API"],
+    results: { platform: "Mobile", impact: "On-the-go AI learning", role: "Co-Founder" },
+    deployment: { cloud: "Production", cicd: "Live", monitoring: "Active" },
+    link: "https://app.acadeva.xyz",
   },
   {
-    name: "Multi-Agent Research Assistant",
-    summary: "Autonomous agent system that researches, synthesizes, and reports on technical topics.",
-    tags: ["Python", "LangChain", "OpenAI", "Pinecone", "FastAPI"],
-    problem: "Research teams spending weeks on literature reviews that could be partially automated with AI agents.",
-    architecture: "User Query → Planner Agent → Search Agent → Analyst Agent → Writer Agent → Structured Report",
-    stack: ["Python", "LangChain", "OpenAI GPT-4", "Pinecone", "FastAPI"],
-    results: { accuracy: "91%", latency: "<30s per report", impact: "75% reduction in initial research time" },
-    deployment: { cloud: "AWS Lambda", cicd: "GitHub Actions", monitoring: "CloudWatch" },
+    name: "Breast Cancer Prediction Model",
+    summary: "ML model that predicts breast cancer from diagnostic features with high accuracy.",
+    tags: ["Python", "Scikit-learn", "Streamlit", "ML"],
+    problem: "Early breast cancer detection is critical — ML can assist medical professionals in screening.",
+    architecture: "User Input → Feature Processing → ML Model → Prediction → Visualization",
+    stack: ["Python", "Scikit-learn", "Streamlit", "Pandas"],
+    results: { accuracy: "High", latency: "Real-time", impact: "Medical screening assistance" },
+    deployment: { cloud: "Streamlit Cloud", cicd: "GitHub", monitoring: "Streamlit" },
+    link: "https://breastpredicionapp-xhwrbj5nbaqlgdbh2g82uc.streamlit.app/",
   },
 ];
 
@@ -73,9 +76,22 @@ const FeaturedProjects = () => {
                     </span>
                   ))}
                 </div>
-                <span className="inline-flex items-center gap-1 text-xs text-primary font-medium">
-                  View Case Study <ArrowRight className="w-3 h-3" />
-                </span>
+                <div className="flex items-center gap-3">
+                  <span className="inline-flex items-center gap-1 text-xs text-primary font-medium">
+                    View Details <ArrowRight className="w-3 h-3" />
+                  </span>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary font-medium transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Visit ↗
+                    </a>
+                  )}
+                </div>
               </motion.div>
             ))}
           </div>
