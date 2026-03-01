@@ -21,11 +21,21 @@ const Hero = () => {
           <p className="font-mono text-primary text-sm mb-4 tracking-wider">
             {"// Hello, I'm"}
           </p>
-          <h1 className="text-5xl md:text-7xl font-black leading-[1.05] mb-4">
-            Your
-            <br />
-            <span className="text-gradient">Name</span>
-          </h1>
+          <div className="flex items-center gap-5 mb-4">
+            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-primary/40 overflow-hidden bg-secondary flex-shrink-0">
+              {/* Replace src with your actual image */}
+              <img
+                src="/placeholder.svg"
+                alt="Profile photo"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h1 className="text-5xl md:text-7xl font-black leading-[1.05]">
+              Your
+              <br />
+              <span className="text-gradient">Name</span>
+            </h1>
+          </div>
           <p className="font-mono text-sm text-muted-foreground mb-6 leading-relaxed">
             Machine Learning Engineer · LLM Systems Architect · Agentic AI Developer
           </p>
