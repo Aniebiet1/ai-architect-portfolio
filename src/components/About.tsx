@@ -27,7 +27,7 @@ const About = () => {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-5 text-secondary-foreground leading-relaxed">
               <p>
-                With over 5 years of hands-on experience in machine learning and AI systems engineering, I specialize in building production-grade solutions that bridge the gap between research and real-world impact.
+                With over 3 years of hands-on experience in machine learning and AI systems engineering, I specialize in building production-grade solutions that bridge the gap between research and real-world impact.
               </p>
               <p>
                 My core focus areas include deep learning, large language model engineering, retrieval-augmented generation (RAG) systems, and the emerging field of agentic AI — where autonomous agents reason, plan, and execute complex tasks.

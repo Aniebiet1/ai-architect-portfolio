@@ -36,6 +36,17 @@ const projects = [
     deployment: { cloud: "Streamlit Cloud", cicd: "GitHub", monitoring: "Streamlit" },
     link: "https://breastpredicionapp-xhwrbj5nbaqlgdbh2g82uc.streamlit.app/",
   },
+  {
+    name: "Job Application Assistant",
+    summary: "Agentic AI system that automates and optimizes job applications using LangChain.",
+    tags: ["LangChain", "Agentic AI", "Python", "Automation"],
+    problem: "Job seekers spend excessive time on redundant application tasks, reducing efficiency and preventing focus on strategic networking.",
+    architecture: "User Input → Agent Orchestrator → LLM Reasoning → Tool Execution → Application Optimizer → Output",
+    stack: ["LangChain", "Python", "LLM", "Streamlit", "Agentic Workflow"],
+    results: { efficiency: "10x faster applications", impact: "Intelligent job application automation", tools: "Resume matching, cover letter generation" },
+    deployment: { cloud: "Streamlit Cloud", cicd: "Live", monitoring: "Active" },
+    link: "https://jobapplicationassistant1.streamlit.app/",
+  },
 ];
 
 const FeaturedProjects = () => {

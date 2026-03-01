@@ -22,25 +22,25 @@ const Hero = () => {
             {"// Hello, I'm"}
           </p>
           <div className="flex items-center gap-5 mb-4">
-            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-primary/40 overflow-hidden bg-secondary flex-shrink-0">
+            <div className="w-32 h-32 md:w-48 md:h-48 rounded-full border-2 border-primary/40 overflow-hidden bg-secondary flex-shrink-0">
               {/* Replace src with your actual image */}
               <img
-                src="/placeholder.svg"
+                src="/me.jpeg"
                 alt="Profile photo"
                 className="w-full h-full object-cover"
               />
             </div>
             <h1 className="text-5xl md:text-7xl font-black leading-[1.05]">
-              Your
+              Joseph
               <br />
-              <span className="text-gradient">Name</span>
+              <span className="text-gradient">Cosmos</span>
             </h1>
           </div>
           <p className="font-mono text-sm text-muted-foreground mb-6 leading-relaxed">
             Machine Learning Engineer · LLM Systems Architect · Agentic AI Developer
           </p>
-          <p className="text-secondary-foreground max-w-md mb-10 leading-relaxed">
-            I design and deploy production-grade ML systems, LLM architectures, and autonomous AI agents that solve real-world problems at scale.
+          <p className="text-secondary-foreground max-w-md mb-6 leading-relaxed">
+            3 years of hands-on experience building production-grade ML systems, LLM architectures, and autonomous AI agents that solve real-world problems at scale.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -57,7 +57,8 @@ const Hero = () => {
               <Mail className="w-4 h-4" /> Contact Me
             </a>
             <a
-              href="#"
+              href="/cosmos_joseph_visualcv_Resume.pdf"
+              download
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-semibold text-sm hover:bg-secondary transition-colors"
             >
               <Download className="w-4 h-4" /> Resume

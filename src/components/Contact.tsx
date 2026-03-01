@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Github, X } from "lucide-react";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -24,15 +24,15 @@ const Contact = () => {
 
           <div className="flex items-center justify-center gap-6 mb-12">
             <a
-              href="mailto:hello@example.com"
+              href="mailto:josephcosmos743@gmail.com"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity"
             >
               <Mail className="w-4 h-4" /> Get in Touch
             </a>
-            <a href="#" className="p-3 rounded-lg border border-border hover:bg-secondary transition-colors">
-              <Linkedin className="w-5 h-5 text-muted-foreground hover:text-foreground" />
+            <a href="https://x.com/josephcosmos01" target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg border border-border hover:bg-secondary transition-colors">
+              <X className="w-5 h-5 text-muted-foreground hover:text-foreground" />
             </a>
-            <a href="#" className="p-3 rounded-lg border border-border hover:bg-secondary transition-colors">
+            <a href="https://github.com/Aniebiet1" target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg border border-border hover:bg-secondary transition-colors">
               <Github className="w-5 h-5 text-muted-foreground hover:text-foreground" />
             </a>
           </div>

@@ -16,6 +16,13 @@ const cases = [
     solution: "Designed a hybrid retrieval + generative system using fine-tuned LLM with RAG. Implemented conversation memory, fallback routing, and continuous learning from support agent corrections.",
     results: ["92% intent accuracy", "45% reduction in human escalations", "$1.2M annual cost savings"],
   },
+  {
+    name: "Acadeva Recommendation Engine & AI Models",
+    context: "EdTech / Personalized Learning",
+    challenge: "Personalizing learning recommendations for students with diverse learning styles, subjects, and pace while maintaining low latency and high engagement. Required building custom AI models that adapt to individual student behavior.",
+    solution: "Architected a multi-model recommendation system combining collaborative filtering with content-based filtering and LLM-powered personalization. Built custom fine-tuned models for content understanding and student profiling. Implemented real-time inference pipeline with caching and model versioning.",
+    results: ["85% student engagement improvement", "Custom AI models deployed in production", "Personalized learning paths for 10K+ students", "Real-time inference < 200ms"],
+  },
 ];
 
 const CaseStudies = () => {
