@@ -4,28 +4,6 @@ import { ArrowRight, X } from "lucide-react";
 
 const projects = [
   {
-    name: "Acadeva – Website",
-    summary: "Co-founded an EdTech platform with resourceful AI-powered tools for students.",
-    tags: ["React", "AI", "EdTech", "Co-Founder"],
-    problem: "Students lack access to intelligent, consolidated learning tools that adapt to their needs.",
-    architecture: "User → Web App → AI Services → Content Engine → Personalized Output",
-    stack: ["React", "AI/ML", "Web Platform"],
-    results: { users: "Growing", impact: "AI-powered student tools", role: "Co-Founder" },
-    deployment: { cloud: "Production", cicd: "Live", monitoring: "Active" },
-    link: "https://acadeva.xyz",
-  },
-  {
-    name: "Acadeva – Mobile App",
-    summary: "Mobile companion app with AI tools designed to help students learn more effectively.",
-    tags: ["Mobile", "AI", "EdTech", "Co-Founder"],
-    problem: "Students need on-the-go access to AI-powered study tools from their phones.",
-    architecture: "Mobile App → API Gateway → AI Services → Student Dashboard",
-    stack: ["Mobile App", "AI Tools", "REST API"],
-    results: { platform: "Mobile", impact: "On-the-go AI learning", role: "Co-Founder" },
-    deployment: { cloud: "Production", cicd: "Live", monitoring: "Active" },
-    link: "https://app.acadeva.xyz",
-  },
-  {
     name: "Breast Cancer Prediction Model",
     summary: "ML model that predicts breast cancer from diagnostic features with high accuracy.",
     tags: ["Python", "Scikit-learn", "Streamlit", "ML"],
@@ -35,6 +13,17 @@ const projects = [
     results: { accuracy: "High", latency: "Real-time", impact: "Medical screening assistance" },
     deployment: { cloud: "Streamlit Cloud", cicd: "GitHub", monitoring: "Streamlit" },
     link: "https://breastpredicionapp-xhwrbj5nbaqlgdbh2g82uc.streamlit.app/",
+  },
+  {
+    name: "Acadeva",
+    summary: "Co-founded an intelligent EdTech platform powered by ML and agentic AI systems for personalized student learning.",
+    tags: ["ML", "Agentic AI", "EdTech", "Co-Founder", "LLM"],
+    problem: "Students lack access to adaptive, intelligent learning systems that understand individual learning patterns and provide personalized guidance at scale.",
+    architecture: "Student Input → AI Agent Orchestrator → ML Learning Models → Adaptive Content Engine → Personalized Recommendations",
+    stack: ["Python", "ML/AI", "Agentic Systems", "LLM APIs", "Vector DB"],
+    results: { engagement: "85% improvement", students: "10K+", impact: "Adaptive AI-driven learning paths" },
+    deployment: { cloud: "Production", cicd: "Live", monitoring: "Active" },
+    link: "https://app.acadeva.xyz",
   },
   {
     name: "Job Application Assistant",
