@@ -2,6 +2,15 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ChevronDown, ExternalLink } from "lucide-react";
 
+const featuredArticle = {
+  title: "We Had No Plan B, Just a Dream, a Pitch, and a Risk That Changed Everything",
+  excerpt:
+    "A Medium story published under Startup Stash about the pitch, the risk, and how Acadeva's journey began to get recognition.",
+  link: "https://medium.com/startup-stash/we-had-no-plan-b-just-a-dream-a-pitch-and-a-risk-that-changed-everything-e391390739cb",
+  recognition: "Recognized by Startup Stash",
+  image: "/public/medium-article-preview.jpg",
+};
+
 const articles = [
   {
     title: "Production RAG Systems: Architecture Patterns and Implementation Strategies for Enterprise AI",
@@ -86,6 +95,51 @@ const Research = () => {
         >
           <p className="font-mono text-primary text-sm mb-2">{"// 07"}</p>
           <h2 className="text-4xl font-bold mb-12">Research & Technical Writing</h2>
+
+          <motion.article
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5 }}
+            className="grid lg:grid-cols-[1.1fr_0.9fr] gap-6 bg-card border border-border rounded-2xl p-6 mb-8 overflow-hidden"
+          >
+            <div className="space-y-4">
+              <div>
+                <p className="font-mono text-xs text-primary mb-2">Featured Medium Article</p>
+                <h3 className="text-2xl font-bold leading-tight">{featuredArticle.title}</h3>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
+                {featuredArticle.excerpt}
+              </p>
+              <p className="text-xs font-mono text-primary">{featuredArticle.recognition}</p>
+              <a
+                href={featuredArticle.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-semibold hover:opacity-90 transition-opacity w-fit"
+              >
+                Read on Medium
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
+
+            <a
+              href={featuredArticle.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative block min-h-[280px] rounded-xl overflow-hidden border border-border bg-secondary"
+            >
+              <img
+                src={featuredArticle.image}
+                alt="Medium article preview"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/10 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5">
+                <p className="text-xs font-mono text-primary mb-2">Startup Stash feature</p>
+                <p className="text-sm text-foreground font-medium">Click to open the full article</p>
+              </div>
+            </a>
+          </motion.article>
 
           <div className="space-y-4">
             {articles.map((article, i) => (

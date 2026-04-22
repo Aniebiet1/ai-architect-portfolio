@@ -36,6 +36,17 @@ const projects = [
     deployment: { cloud: "Streamlit Cloud", cicd: "Live", monitoring: "Active" },
     link: "https://jobapplicationassistant1.streamlit.app/",
   },
+  {
+    name: "AI Phishing Detection Application",
+    summary: "Detects phishing from suspicious URLs and emails using ML-backed classification.",
+    tags: ["FastAPI", "Machine Learning", "Cybersecurity", "Email", "URL"],
+    problem: "Phishing attacks through fake URLs and emails are increasing, and users need fast automated detection before interacting with malicious content.",
+    architecture: "Email/URL Input → Feature Extraction → Multi-Model Evaluation → Best Model Selection → FastAPI Inference API → Detection Result",
+    stack: ["Python", "FastAPI", "Scikit-learn", "Pandas", "ML Model Benchmarking"],
+    results: { coverage: "URL + Email detection", modeling: "Compared multiple ML models", impact: "Improved phishing risk awareness" },
+    deployment: { cloud: "Render", cicd: "Live", monitoring: "Application logs" },
+    link: "https://phishing-detection-ai-7fnf.onrender.com/",
+  },
 ];
 
 const FeaturedProjects = () => {
@@ -53,7 +64,7 @@ const FeaturedProjects = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="font-mono text-primary text-sm mb-2">{"// 03"}</p>
-          <h2 className="text-4xl font-bold mb-12">Featured AI Systems</h2>
+          <h2 className="text-4xl font-bold mb-12">Featured AI Projects</h2>
 
           <div className="grid md:grid-cols-3 gap-6">
             {projects.map((project, i) => (

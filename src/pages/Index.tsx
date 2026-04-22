@@ -7,6 +7,7 @@ import AgenticAI from "@/components/AgenticAI";
 import CaseStudies from "@/components/CaseStudies";
 import TechStack from "@/components/TechStack";
 import Research from "@/components/Research";
+import Archievements from "@/components/Archievements";
 import OpenSource from "@/components/OpenSource";
 import Contact from "@/components/Contact";
 
@@ -22,6 +23,7 @@ const Index = () => {
       <CaseStudies />
       <TechStack />
       <Research />
+      <Archievements />
       <OpenSource />
       <Contact />
     </div>

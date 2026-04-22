@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Github, Twitter } from "lucide-react";
+import { Mail, Github, Twitter, Linkedin } from "lucide-react";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -31,6 +31,9 @@ const Contact = () => {
             </a>
             <a href="https://twitter.com/josephcosmos01" target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg border border-border hover:bg-secondary transition-colors">
               <Twitter className="w-5 h-5 text-muted-foreground hover:text-foreground" />
+            </a>
+            <a href="https://www.linkedin.com/in/josephcosmos/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg border border-border hover:bg-secondary transition-colors">
+              <Linkedin className="w-5 h-5 text-muted-foreground hover:text-foreground" />
             </a>
             <a href="https://github.com/Aniebiet1" target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg border border-border hover:bg-secondary transition-colors">
               <Github className="w-5 h-5 text-muted-foreground hover:text-foreground" />

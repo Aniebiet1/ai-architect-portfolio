@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Agentic AI", href: "#agentic" },
   { label: "Case Studies", href: "#cases" },
   { label: "Stack", href: "#stack" },
+  { label: "Archievements", href: "#archievements" },
   { label: "Contact", href: "#contact" },
 ];
 
