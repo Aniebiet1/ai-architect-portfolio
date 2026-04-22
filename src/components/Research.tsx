@@ -2,13 +2,15 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ChevronDown, ExternalLink } from "lucide-react";
 
+const ASSET_BASE = import.meta.env.BASE_URL;
+
 const featuredArticle = {
   title: "We Had No Plan B, Just a Dream, a Pitch, and a Risk That Changed Everything",
   excerpt:
     "A Medium story published under Startup Stash about the pitch, the risk, and how Acadeva's journey began to get recognition.",
   link: "https://medium.com/startup-stash/we-had-no-plan-b-just-a-dream-a-pitch-and-a-risk-that-changed-everything-e391390739cb",
   recognition: "Recognized by Startup Stash",
-  image: "/public/medium-article-preview.jpg",
+  image: `${ASSET_BASE}medium-article-preview.jpg`,
 };
 
 const articles = [

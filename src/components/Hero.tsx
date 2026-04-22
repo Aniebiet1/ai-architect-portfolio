@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail } from "lucide-react";
 
+const ASSET_BASE = import.meta.env.BASE_URL;
+
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -25,7 +27,7 @@ const Hero = () => {
             <div className="w-32 h-32 md:w-48 md:h-48 rounded-full border-2 border-primary/40 overflow-hidden bg-secondary flex-shrink-0">
               {/* Replace src with your actual image */}
               <img
-                src="/me.jpeg"
+                src={`${ASSET_BASE}me.jpeg`}
                 alt="Profile photo"
                 className="w-full h-full object-cover"
               />
@@ -57,7 +59,7 @@ const Hero = () => {
               <Mail className="w-4 h-4" /> Contact Me
             </a>
             <a
-              href="/cosmos_joseph_visualcv_Resume.pdf"
+              href={`${ASSET_BASE}Cosmos_Joseph_VisualCV_Resume.pdf.pdf`}
               download
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-semibold text-sm hover:bg-secondary transition-colors"
             >

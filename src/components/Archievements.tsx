@@ -2,6 +2,8 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink } from "lucide-react";
 
+const ASSET_BASE = import.meta.env.BASE_URL;
+
 const workExperience = [
   {
     role: "Machine Learning / Artificial Intelligence Engineer",
@@ -9,7 +11,7 @@ const workExperience = [
     summary: "Building AI and ML solutions for a trading-focused company.",
     website: "https://cafx.io/",
     linkedin: "https://www.linkedin.com/company/cafxio/",
-    logo: "/cafx-logo.jpg",
+    logo: `${ASSET_BASE}cafx-logo.jpg`,
   },
   {
     role: "AI Co-Lead",
@@ -18,7 +20,7 @@ const workExperience = [
       "Co-led a Google-backed student developer community, organizing tech workshops and events at UNIUYO.",
     website: "https://gdg.community.dev/",
     linkedin: "https://www.linkedin.com/company/gdscuniuyo/",
-    logo: "/gdgoc-logo.png",
+    logo: `${ASSET_BASE}gdgoc-logo.png`,
   },
   {
     role: "AI / ML Engineer",
@@ -27,7 +29,7 @@ const workExperience = [
       "Building AI-powered education products and production-ready ML experiences for students.",
     website: "https://acadeva.xyz/",
     linkedin: "https://www.linkedin.com/company/acadeva/",
-    logo: "/acadeva-logo.png",
+    logo: `${ASSET_BASE}acadeva-logo.png`,
   },
 ];
 
@@ -38,7 +40,7 @@ const hackathonPrizes = [
     title: "DevEast Business Pitch",
     description:
       "Pitched Acadeva, a comprehensive platform where uni students can find study materials and collaborate.",
-    image: "/hackathon-2025.jpg",
+    image: `${ASSET_BASE}hackathon-2025.jpg`,
     news: "https://leadership.ng/varsity-students-pitch-innovations-at-2025-entrepreneurship-week/",
   },
   {
@@ -47,7 +49,7 @@ const hackathonPrizes = [
     title: "GDGoC UNIUYO Tech Ignite",
     description:
       "Built 2 AI study tools: an quiz generator from PDFs and an interactive AI study platform.",
-    image: "/techignite.jpg",
+    image: `${ASSET_BASE}techignite.jpg`,
     news: "",
   },
 ];
@@ -92,7 +94,7 @@ const Archievements = () => {
                       className="w-full h-full object-cover"
                       loading="lazy"
                       onError={(e) => {
-                        e.currentTarget.src = "/placeholder.svg";
+                        e.currentTarget.src = `${ASSET_BASE}placeholder.svg`;
                       }}
                     />
                   </div>
